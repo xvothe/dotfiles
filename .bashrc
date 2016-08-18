@@ -112,7 +112,3 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-
-# overthewire wechall scoring
-export WECHALLUSER="cyberchrist"
-export WECHALLTOKEN="978F9-5F91A-837CF-E7D19-3D099-B542D"
