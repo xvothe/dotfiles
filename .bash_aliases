@@ -2,7 +2,7 @@
 alias chrome='nohup google-chrome &>/dev/null &'
 
 # virtualbox
-alias virtualbox='nohup virtualbox &>/dev/null &'
+alias vb='nohup virtualbox &>/dev/null &'
 
 # easy exit
 alias ee='exit'
@@ -14,14 +14,17 @@ alias untar='tar xvf'
 alias dl='cd ~/Downloads'
 alias ..='cd ..'
 
-# enable sudo for aliases
-alias sudo='sudo '
-
-# Poweroff
+# poweroff
 alias off='/usr/bin/dbus-send --system --print-reply --dest="org.freedesktop.ConsoleKit" /org/freedesktop/ConsoleKit/Manager org.freedesktop.ConsoleKit.Manager.Stop'
 
-# Restart
+# restart
 alias restart='/usr/bin/dbus-send --system --print-reply --dest="org.freedesktop.ConsoleKit" /org/freedesktop/ConsoleKit/Manager org.freedesktop.ConsoleKit.Manager.Restart'
 
-# Suspend
+# suspend
 alias suspend='/usr/bin/dbus-send --system --print-reply --dest="org.freedesktop.UPower" /org/freedesktop/UPower org.freedesktop.UPower.Suspend'
+
+# connect to a projector
+alias present='xrandr --output VGA1 --mode 1024x768 --same-as LVDS1'
+
+# firefox
+alias ff='Downloads/firefox/./firefox &>/dev/null &'

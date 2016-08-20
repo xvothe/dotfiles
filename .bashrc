@@ -112,3 +112,9 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+LS_COLORS=$LS_COLORS:'di=0;35:' ; export LS_COLORS
+
+if [ -n "$DISPLAY" -a "$TERM" == "xterm" ]; then
+    export TERM=xterm-256color
+fi
